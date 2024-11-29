@@ -1,0 +1,6 @@
+FROM openjdk:21
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+RUN javac HelloWorld.java
+CMD ["java","HelloWorld"]
